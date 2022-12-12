@@ -27,18 +27,153 @@
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <section class="section"></section>
-            <section class="section"></section>
-            <section class="section"></section>
-            <section class="section"></section>
-            <section class="section"></section>
-            <section class="section"></section>
-            <section class="section"></section>
+        <div class="container main-container">
+            <section class="section section-profile" id="profile">
+                <img src="./assets/img/avatar.jpg" alt="avatar" class="section-profile-logo">
+                <div class="section-profile-title">
+                    <h1 class="section-title main-title">Elizaveta Biryukova</h1>
+                    <h3 class="section-subtitle">Junior frontend developer</h3>
+                </div>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        Phone:
+                        <a href="">+79527908734</a>
+                    </li>
+                    <li class="section-item">
+                        E-mail:
+                        <a href="">birliza@mail</a>
+                    </li>
+                    <li class="section-item">
+                        Telegram:
+                        <a href="">@ElizavetaBiryukova</a>
+                    </li>
+                    <li class="section-item">
+                        GitHub:
+                        <a href="">ElizavetaBiryukova</a>
+                    </li>
+                    <li class="section-item">
+                        Website:
+                        <a href="">biryukova.org</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="aboutMe">
+                <h2 class="section-title">About me</h2>
+                <p>I live in Kaliningrad. I study JS and React. I am currently working on a React project. I love
+                    learning new things.</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        HTML, CSS (Preprocessor SCSS, BEM methodology)
+                    </li>
+                    <li class="section-item">
+                        JavaScript, React JavaScript
+                    </li>
+                    <li class="section-item">
+                        Git
+                    </li>
+                    <li class="section-item">
+                        Gulp, Webpack
+                    </li>
+                    <li class="section-item">
+                        Figma
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="codeExample">
+                <h2 class="section-title">Code example</h2>
+                <p>You are going to be given a word. Your job is to return the middle character of the word. If the
+                    word's length is odd, return the middle character. If the word's length is even, return the middle 2
+                    characters.</p>
+
+                <pre class="pre">
+                        <code>
+                            function getMiddle(word) {
+                                let number = word.length / 2;
+                                let res;
+                                if (word.length % 2 == 0) {
+                                    res = word.slice(number - 1, number + 1);
+                                    return res;
+                                } else {
+                                    res = word.slice(Math.floor(number), Math.floor(number) + 1);
+                                    return res;
+                                }
+                            }
+                        </code>
+                    </pre>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        My site
+                    </li>
+                    <li class="section-item">
+                        Travello
+                    </li>
+                    <li class="section-item">
+                        Keksobooking
+                    </li>
+                    <li class="section-item">
+                        Kekstagram
+                    </li>
+                    <li class="section-item">
+                        Nerds
+                    </li>
+                    <li class="section-item">
+                        Pink
+                    </li>
+                    <li class="section-item">
+                        Discover-restaurant
+                    </li>
+                    <li class="section-item">
+                        Quiz
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        HTML Academy
+                    </li>
+                    <li class="section-item">
+                        RS School
+                    </li>
+                    <li class="section-item">
+                        Learn JavaScript
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul class="section-list">
+                    <li class="section-item">
+                        Russian - Native
+                    </li>
+                    <li class="section-item">
+                        English - Elementary
+                    </li>
+                    <li class="section-item">
+                        Deutsch - Beginner
+                    </li>
+                </ul>
+            </section>
         </div>
     </main>
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container footer-container">
+            <div>
+                © 2022
+                <a href="https://github.com/ElizavetaBiryukova" class="github nav-link">ElizavetaBiryukova</a>
+            </div>
+            <a href="https://rs.school/js/" class="rss"></a>
+        </div>
     </footer>
 </body>
 
