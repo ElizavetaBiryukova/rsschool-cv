@@ -29,7 +29,9 @@
     <main class="main">
         <div class="container main-container">
             <section class="section section-profile" id="profile">
-                <img src="./assets/img/avatar.jpg" alt="avatar" class="section-profile-logo">
+                <div class="section-profile-logo">
+                    <img src="./assets/img/avatar.jpg" alt="avatar" class="profile-logo">
+                </div>
                 <div class="section-profile-title">
                     <h1 class="section-title main-title">Elizaveta Biryukova</h1>
                     <h3 class="section-subtitle">Junior frontend developer</h3>
@@ -40,30 +42,30 @@
                 <ul class="section-list">
                     <li class="section-item">
                         Phone:
-                        <a href="">+79527908734</a>
+                        <a href="tel:+79527908734">+79527908734</a>
                     </li>
                     <li class="section-item">
                         E-mail:
-                        <a href="">birliza@mail</a>
+                        <a href="mailto:birliza@mail">birliza@mail.ru</a>
                     </li>
                     <li class="section-item">
                         Telegram:
-                        <a href="">@ElizavetaBiryukova</a>
+                        <a href="https://t.me/ElizavetaBiryukova">ElizavetaBiryukova</a>
                     </li>
                     <li class="section-item">
                         GitHub:
-                        <a href="">ElizavetaBiryukova</a>
+                        <a href="https://github.com/ElizavetaBiryukova">ElizavetaBiryukova</a>
                     </li>
                     <li class="section-item">
                         Website:
-                        <a href="">biryukova.org</a>
+                        <a href="https://biryukova.org/">biryukova.org</a>
                     </li>
                 </ul>
             </section>
             <section class="section" id="aboutMe">
                 <h2 class="section-title">About me</h2>
-                <p>I live in Kaliningrad. I study JS and React. I am currently working on a React project. I love
-                    learning new things.</p>
+                <p>I'm from Kaliningrad. I've been studying JS and React. I'm currently working for some React project. I love to
+                    learn a new things.</p>
             </section>
             <section class="section" id="skills">
                 <h2 class="section-title">Skills</h2>
@@ -72,7 +74,7 @@
                         HTML, CSS (Preprocessor SCSS, BEM methodology)
                     </li>
                     <li class="section-item">
-                        JavaScript, React JavaScript
+                        JavaScript, React
                     </li>
                     <li class="section-item">
                         Git
@@ -85,54 +87,35 @@
                     </li>
                 </ul>
             </section>
-            <section class="section" id="codeExample">
-                <h2 class="section-title">Code example</h2>
-                <p>You are going to be given a word. Your job is to return the middle character of the word. If the
-                    word's length is odd, return the middle character. If the word's length is even, return the middle 2
-                    characters.</p>
-
-                <pre class="pre">
-                        <code>
-                            function getMiddle(word) {
-                                let number = word.length / 2;
-                                let res;
-                                if (word.length % 2 == 0) {
-                                    res = word.slice(number - 1, number + 1);
-                                    return res;
-                                } else {
-                                    res = word.slice(Math.floor(number), Math.floor(number) + 1);
-                                    return res;
-                                }
-                            }
-                        </code>
-                    </pre>
-            </section>
             <section class="section" id="projects">
                 <h2 class="section-title">Projects</h2>
-                <ul class="section-list">
+                <ul class="section-list section-list-projects">
                     <li class="section-item">
-                        My site
+                        <a href="https://biryukova.org/">My site</a>
                     </li>
                     <li class="section-item">
-                        Travello
+                        <a href="https://github.com/ElizavetaBiryukova/travello">Travello</a>
                     </li>
                     <li class="section-item">
-                        Keksobooking
+                        <a href="https://github.com/ElizavetaBiryukova/keksobooking">Keksobooking</a>
                     </li>
                     <li class="section-item">
-                        Kekstagram
+                        <a href="https://github.com/ElizavetaBiryukova/kekstagram">Kekstagram</a>
                     </li>
                     <li class="section-item">
-                        Nerds
+                        <a href="https://github.com/ElizavetaBiryukova/nerds">Nerds</a>
                     </li>
                     <li class="section-item">
-                        Pink
+                        <a href="https://github.com/ElizavetaBiryukova/pinkapp">Pink</a>
                     </li>
                     <li class="section-item">
-                        Discover-restaurant
+                        <a href="https://github.com/ElizavetaBiryukova/discover-restaurant">Discover-restaurant</a>
                     </li>
                     <li class="section-item">
-                        Quiz
+                        <a href="https://github.com/ElizavetaBiryukova/quiz">Quiz</a>
+                    </li>
+                    <li class="section-item">
+                        <a href="https://github.com/ElizavetaBiryukova/What-to-watch">What to watch</a>
                     </li>
                 </ul>
             </section>
@@ -140,13 +123,10 @@
                 <h2 class="section-title">Courses</h2>
                 <ul class="section-list">
                     <li class="section-item">
-                        HTML Academy
+                        <a href="https://htmlacademy.ru/">HTML Academy</a>
                     </li>
                     <li class="section-item">
-                        RS School
-                    </li>
-                    <li class="section-item">
-                        Learn JavaScript
+                        <a href="https://rs.school/">RS School</a>
                     </li>
                 </ul>
             </section>
@@ -163,6 +143,24 @@
                         Deutsch - Beginner
                     </li>
                 </ul>
+            </section>
+            <section class="section" id="codeExample">
+                <h2 class="section-title">Code example</h2>
+                <p>You are going to be given a word. Your job is to return the middle character of the word. If the
+                    word's length is odd, return the middle character. If the word's length is even, return the middle 2
+                    characters.</p>
+                <pre class="pre">
+                <code>
+                    function getMiddle(word) {
+                    const number = word.length / 2;
+                    if (word.length % 2 == 0) {
+                        return res = word.slice(number - 1, number + 1);
+                    } else {
+                        return res = word.slice(Math.floor(number), Math.floor(number) + 1);
+                    }
+                    };
+                </code>
+                </pre>
             </section>
         </div>
     </main>
