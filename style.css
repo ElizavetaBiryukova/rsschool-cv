@@ -95,6 +95,11 @@ body {
     margin: 0px 50px;
 }
 
+.section:nth-child(5) {
+    width: 100%;
+    margin: 0px 50px;
+}
+
 @media (max-width: 768px) {
     .section {
         width: 100%;
@@ -286,4 +291,13 @@ body {
 
 .contacts-item:nth-child(5):before {
     background-image: url(assets/img/heart.svg);
+}
+
+.projects-img {
+    width: 307px;
+    height: 170px;
+}
+
+.projects-item:before {
+    display: none;
 }
