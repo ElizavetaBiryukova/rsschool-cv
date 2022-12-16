@@ -290,8 +290,8 @@ body {
 }
 
 .projects-img {
-    width: 307px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
     padding-top: 10px;
 }
 
@@ -333,11 +333,6 @@ body {
         width: calc(50% - 20px);
     }
 
-    .projects-img {
-        width: 410px;
-        height: 227px;
-    }
-
     .nav-link {
         font-size: 16px;
     }
@@ -346,11 +341,6 @@ body {
 @media (max-width: 945px) {
     .projects-item {
         width: 100%;
-    }
-
-    .projects-img {
-        width: 615px;
-        height: 340px;
     }
 
     .nav-list {
@@ -390,11 +380,6 @@ body {
 
     .nav-link {
         font-size: 12px;
-    }
-
-    .projects-img {
-        width: 307px;
-        height: 170px;
     }
 
     .pre {
